@@ -1,3 +1,12 @@
 spring:
   application:
     name: market-analyzer
+  session:
+    jdbc:
+      initialize-schema: always
+  flyway:
+    baseline-on-migrate: true
+
+app:
+  clothing:
+    base-url: ${CLOTHING_BASE_URL}
